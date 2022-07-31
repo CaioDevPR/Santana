@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ;
+    
+}
+body{
+    background-color:#725d5d;
+}
+
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #0B0C0D;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+nav .logo{
+    color: aliceblue;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+     color: #F25D07;
+     text-decoration: none;
+     font-size: 18px;
+     font-weight: 500;
+     padding: 8px 15px;
+     border-radius: 5px;
+     letter-spacing: 1px;
+     transform: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+background: #fff;
+}
+
+nav .menu-btn i{
+    display: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 920px){
+    nav .menu-btn i{
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #000;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    nav ul.open{
+        left: 0;
+    }
+nav ul li {
+    width: 100%;
+    margin: 50px 0;
+}
+nav ul li a.active,
+nav ul li a:hover{
+background: none;
+color: greenyellow;
+}
+}
+
+.color h5 a{
+    display: flex;
+    justify-content: end;
+    margin: 3px 26px;
+    text-decoration: none;
+    color: #fff;
+
+}
+.color{
+    background-color: #BF1755;
+}
+.banner{
+    background-image: url(/imagens/baner\ final.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.produtos h1{
+    font-size: 3.2rem;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotos1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.fotoss1{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.fotos1 img{
+    padding: 4%;
+}
+.fotoss1 img{
+    padding: 2%;
+}
+
+.container-pedido{
+    background-color: #fefbe6;
+}
+
+.container-pedido .fotos1 .step-line {
+    display: block;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 300%;
+    color: #000;
+}
+ .step-line:before {
+    background-color: #000;
+    content: '';
+    display: block;
+    height: 2px;
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+}
+
+.txt p{
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.product{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+ 
+}
