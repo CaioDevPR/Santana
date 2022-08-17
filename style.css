@@ -5,15 +5,13 @@
     font-family: ;
     
 }
-body{
-    background-color:#725d5d;
-}
+
 
 nav{
     display: flex;
     height: 80px;
     width: 100%;
-    background-color: #0B0C0D;
+    background-color: #fff;
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 0 100px;
@@ -21,15 +19,19 @@ nav{
 }
 
 nav .logo{
-    color: aliceblue;
+    color: #000;
     font-size: 35px;
     font-weight: 600;
+    position: relative;
+    left: 9%;
 }
 
 nav ul{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    position: relative;
+    right: 15%;
 }
 
 nav ul li{
@@ -37,14 +39,21 @@ nav ul li{
 }
 
 nav ul li a{
-     color: #F25D07;
+     color: #000;
      text-decoration: none;
-     font-size: 18px;
-     font-weight: 500;
+     font-size: 24px;
+     font-weight: 600;
      padding: 8px 15px;
      border-radius: 5px;
      letter-spacing: 1px;
      transform: all 0.3s ease;
+}
+nav ul li:nth-child(4){
+    border: 1px solid #000;
+    background-color: tan;
+}
+nav ul li:nth-child(4)a:hover{
+    background-color: tan ;
 }
 
 nav ul li a.active,
@@ -54,39 +63,11 @@ background: #fff;
 
 nav .menu-btn i{
     display: none;
-    color: #fff;
+    color: #000;
     cursor: pointer;
 }
 
-@media (max-width: 920px){
-    nav .menu-btn i{
-        display: block;
-    }
-    nav ul {
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        background-color: #000;
-        height: 100vh;
-        width: 100%;
-        text-align: center;
-        display: block;
-        transition: all 0.3s ease;
-    }
 
-    nav ul.open{
-        left: 0;
-    }
-nav ul li {
-    width: 100%;
-    margin: 50px 0;
-}
-nav ul li a.active,
-nav ul li a:hover{
-background: none;
-color: greenyellow;
-}
-}
 
 .color h5 a{
     display: flex;
@@ -97,15 +78,10 @@ color: greenyellow;
 
 }
 .color{
-    background-color: #BF1755;
+    background-color: #000;
 }
-.banner{
-    background-image: url(/imagens/baner\ final.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
+.imageprinc{ 
+
 }
 .produtos h1{
     font-size: 3.2rem;
@@ -141,7 +117,7 @@ color: greenyellow;
 }
 
 .container-pedido{
-    background-color: #fefbe6;
+    
 }
 
 .container-pedido .fotos1 .step-line {
@@ -171,4 +147,40 @@ color: greenyellow;
     display: grid;
     grid-template-columns: repeat(4,1fr);
  
+}
+.btn .btn-primary{
+color: red;
+}
+ p:nth-child(2){
+   text-align: left;
+   
+}
+@media (max-width: 920px){
+    nav .menu-btn i{
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #000;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    nav ul.open{
+        left: 0;
+    }
+nav ul li {
+    width: 100%;
+    margin: 50px 0;
+}
+nav ul li a.active,
+nav ul li a:hover{
+background: none;
+color: #fff;
+}
 }
