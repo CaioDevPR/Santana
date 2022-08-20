@@ -636,4 +636,8 @@ color: #fff;
          letter-spacing: 1px;
          transform: all 0.3s ease;
      }
+     footer p:nth-child(5){
+        margin-top: 10px;
+      
+     }
 }
