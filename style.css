@@ -56,7 +56,7 @@ nav ul li:nth-child(4){
     background-color: red;
 }
 nav ul li:nth-child(4)a:hover{
-    background-color: red ;
+    background-color:  ;
 }
 
 nav ul li a.active,
@@ -152,9 +152,7 @@ nav ul li a:hover{
     grid-template-columns: repeat(4,1fr);
  
 }
-.btn .btn-primary{
-color: red;
-}
+
  p:nth-child(2){
    text-align: left;
    
@@ -401,9 +399,8 @@ color: #fff;
 /* iphone se ate 568px */
 @media screen and (min-width: 290px) and (max-width:320px) {
     nav .logo{
+       width: 60%;
         color: #fff;
-        font-size: 15px;
-        font-weight: 700;
         position: relative;
         left: -35%;
         text-transform: uppercase;
@@ -498,106 +495,145 @@ color: #fff;
     li:nth-child(4) > a:nth-child(1) {
      background-color: #000;
        }
-       li:nth-child(4) {
-      background-color: #000;
-       }
+       nav ul li:nth-child(4) {
+        border: 1px solid #000;
+        background-color: #000;
+
+      }
+       
+       
+       
        nav ul li a{
         color:#fff;
         text-decoration: none;
         font-family: sans-serif;
-        font-size: 24px;
+        font-size: 15px;
         font-weight: 600;
         padding: 8px 15px;
         border-radius: 5px;
         letter-spacing: 1px;
         transform: all 0.3s ease;
     }
+    
 }
 
 /* iphone 6/7/8 375px */
 
 @media screen and (min-width: 321px) and (max-width:414px) {
     nav .logo{
-        color: #fff;
-        font-size: 20px;
-        font-weight: 600;
-        position: relative;
-        right: 15%;
-    }
-
-.title-chop h1{
-font-size: 2rem;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-}
-.choperia{
-    display: flex;
-    flex-direction: column;
-}
-.container img{
-    width: 40%;
-}
-.container-chopeira img{
-    width: 50%;
-}
-#direction {
-    display: flex;
-    flex-direction: column;
-}
-.caminho2 img {
-    width: 50%;
-}
-.direction2{
-    display:flex;
-    flex-direction: column;
-}
-.title-chop h1{
-font-size: 2rem;
-margin-top: 10%;
-}
-.chops{
-margin-bottom: 50%;
-margin: 10px;
-}
-.chops p{
-    margin-top: 2%;
-    font-size: 11px;
-    font-weight: bold;
-}
-.chops img{
-    width: 50%;
-}
-.caminho {
-    display: none;
-}
-.step-line{
-    display: none;
-}
-.container{
-    background-color: #fff;
-}
-.direction2 h3 {
- margin: 10px;
- padding: 10px;
- font-size: 1.4rem;
-}
-.direction2 p{
- font-size: 0.7rem;
-}
-.footer h5{
-font-size: 0.8rem;
-}
-.footer p{
-    font-size: 0.7rem;
-}
-.footer button {
-background-color: #fff;
-border: 1px solid;
-border-radius: 3px;
-padding: 1px 4px;
-position: relative;
-right: 10%;
-}
+        width: 60%;
+         color: #fff;
+         position: relative;
+         left: -35%;
+         text-transform: uppercase;
+     }
+     .title-chop h1{
+     font-size: 2rem;
+     }
+     .container{
+         display: flex;
+         flex-direction: column;
+     }
+     .choperia{
+         display: flex;
+         flex-direction: column;
+     }
+     .container img{
+         width: 40%;
+     }
+     .container-chopeira img{
+         width: 50%;
+     }
+     #direction {
+         display: flex;
+         flex-direction: column;
+     }
+     .caminho2 img {
+         width: 50%;
+     }
+     .direction2{
+         display:flex;
+         flex-direction: column;
+     }
+     .title-chop h1{
+     font-size: 2rem;
+     margin-top: 10%;
+     }
+     .chops{
+     margin-bottom: 50%;
+     margin: 10px;
+     }
+     .chops p{
+         margin-top: 2%;
+         font-size: 11px;
+         font-weight: bold;
+     }
+     .chops img{
+         width: 50%;
+     }
+     .caminho {
+         display: none;
+     }
+     .step-line{
+         display: none;
+     }
+     .container{
+         background-color: #fff;
+     }
+     .direction2 h3 {
+      margin: 10px;
+      padding: 10px;
+      font-size: 1.4rem;
+     }
+     .direction2 p{
+      font-size: 0.7rem;
+     }
+     .footer h5{
+     font-size: 0.8rem;
+     }
+     .footer p{
+         font-size: 0.7rem;
+     }
+     .footer button {
+     background-color: #fff;
+     border: 1px solid;
+     border-radius: 3px;
+     padding: 1px 4px;
+     position: relative;
+     right: 10%;
+     }
+     .imageprinc{
+         width: 100%;
+         height: 100vh;
+        }
+        .banner{
+         background-image: url(/imagens/banerrespon.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         width: 100%;
+         height: 100vh;
+     }
+     li:nth-child(4) > a:nth-child(1) {
+      background-color: #000;
+        }
+        nav ul li:nth-child(4) {
+         border: 1px solid #000;
+         background-color: #000;
+ 
+       }
+        
+        
+        
+        nav ul li a{
+         color:#fff;
+         text-decoration: none;
+         font-family: sans-serif;
+         font-size: 15px;
+         font-weight: 600;
+         padding: 8px 15px;
+         border-radius: 5px;
+         letter-spacing: 1px;
+         transform: all 0.3s ease;
+     }
 }
