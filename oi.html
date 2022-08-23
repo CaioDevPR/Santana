@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+    position: absolute;
+    font-size: 3rem;
+}
+h1::before{
+    content: attr(data-text);
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    color: red;
+    -webkit-text-stroke: 0vw #000;
+    border-right:  2px solid #f44803;
+    overflow: hidden;
+    animation:  animate 6s linear infinite;
+}
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+    70%{
+        width: 100%;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <h1 data-text="carregando..">
+        carregando..
+    </h1>
+</body>
+</html>

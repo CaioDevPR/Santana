@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -23,10 +24,8 @@ nav{
 
 nav .logo{
     color: #fff;
-    font-size: 35px;
-    font-weight: 600;
     position: relative;
-    left: 9%;
+    left: 1%;
 }
 
 nav ul{
@@ -45,19 +44,21 @@ nav ul li a{
     color:#fff;
     text-decoration: none;
     font-size: 24px;
+    font-family: sans-serif;
     font-weight: 600;
-    padding: 8px 15px;
-    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    padding:  11px;
     letter-spacing: 1px;
     transform: all 0.3s ease;
 }
 nav ul li:nth-child(4){
     border: 1px solid #000;
-    background-color: red;
+    
+    
+    
 }
-nav ul li:nth-child(4)a:hover{
-    background-color:  ;
-}
+n
 
 nav ul li a.active,
 nav ul li a:hover{
@@ -86,9 +87,7 @@ nav ul li a:hover{
 .color{
     background-color: #000;
 }
-.imageprinc{ 
 
-}
 .produtos h1{
     font-size: 3.2rem;
     letter-spacing: 2px;
@@ -136,10 +135,12 @@ nav ul li a:hover{
     background-color: #000;
     content: '';
     display: block;
+    bottom: 19px;
     height: 2px;
     margin: 0 auto;
     width: 80%;
     position: relative;
+    
 }
 
 .txt p{
@@ -199,6 +200,7 @@ nav ul li a:hover{
     justify-content: space-around;
     margin-top: 10%;
     background-color: #fdfbe1;
+    
     
 }
 
@@ -324,6 +326,69 @@ footer button:hover{
     background-position: center;
     width: 100%;
     height: 100vh;
+}
+
+/* animacoes */
+
+.logo h1{
+    position: relative;
+   
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Kalam', cursive;
+font-family: 'Rubik Dirt', cursive;
+}
+.logo h1::before{
+    content: attr(data-text);
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    color: #f44803;
+    -webkit-text-stroke: 0vw #000;
+    border-right:  2px solid transparent;
+    overflow: hidden;
+    animation:  animate 8s linear infinite;
+    
+}
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+    70%{
+        width: 100%;
+    }
+}
+
+
+[data-anime]{
+    opacity: 0;
+    transition: 0.4s;
+}
+
+[data-anime="left"]{
+    transform: translate3d(-50px, 0 , 0);
+}
+[data-anime="right"]{
+    transform: translate3d(50px, 0 , 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+[data-anime="top"]{
+    transform: translate3d(0px, 50px, 0);
+}
+[data-anime="bottom"]{
+    transform: translate3d(0px, 50px, 0);
+}
+
+[data-anime="left"]{
+    transform: translate3d(-50px, 0 , 0);
+}
+[data-anime="right"]{
+    transform: translate3d(50px, 0 , 0);
 }
 
 
@@ -513,7 +578,9 @@ color: #fff;
         border-radius: 5px;
         letter-spacing: 1px;
         transform: all 0.3s ease;
+        font-family: 'Kalam', cursive;
     }
+
     
 }
 
@@ -635,9 +702,238 @@ color: #fff;
          border-radius: 5px;
          letter-spacing: 1px;
          transform: all 0.3s ease;
+         font-family: 'Kalam', cursive;
      }
      footer p:nth-child(5){
         margin-top: 10px;
       
      }
+}
+
+@media screen and (min-width: 415px) and (max-width: 600px ) {
+     nav .logo{
+        width: 90%;
+         position: relative;
+         left: -15%;
+     }
+     li:nth-child(4) > a:nth-child(1) {
+        background-color: #000;
+          }
+          nav ul li:nth-child(4) {
+           border: 1px solid #000;
+           background-color: #000;
+   
+         }
+         .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .choperia{
+            display: flex;
+            flex-direction: column;
+        }
+        .container img{
+            width: 40%;
+        }
+        .container-chopeira img{
+            width: 50%;
+        }
+        #direction {
+            display: flex;
+            flex-direction: column;
+        }
+        .caminho2 img {
+            width: 50%;
+        }
+        .direction2{
+            display:flex;
+            flex-direction: column;
+        }
+        .title-chop h1{
+        font-size: 2rem;
+        margin-top: 10%;
+        }
+        
+        .caminho {
+            display: none;
+        }
+        .step-line{
+            display: none;
+        }
+        .chops{
+            margin-bottom: 50%;
+            margin: 10px;
+            }
+            .chops p{
+                margin-top: 2%;
+                font-size: 19px;
+                font-weight: bold;
+            }
+            .chops img{
+                width: 50%;
+            }
+            nav ul li a{
+                color:#fff;
+                text-decoration: none;
+                font-family: sans-serif;
+                font-size: 15px;
+                font-weight: 600;
+                padding: 8px 15px;
+                border-radius: 5px;
+                letter-spacing: 1px;
+                transform: all 0.3s ease;
+                font-family: 'Kalam', cursive;
+            }
+}
+
+/* landscape*/
+
+@media screen and (min-width: 568px) and (max-width: 667px) and (orientation: landscape) {
+    nav .logo{
+        width: 90%;
+         position: relative;
+         left: -15%;
+         
+     }
+     .container{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+     }
+     .chops:nth-child(5) > img:nth-child(1) {
+        
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 77%;
+       }
+       .chops:nth-child(5) > p:nth-child(2) {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 50%;
+       }
+       nav ul li a{
+        color:#fff;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 8px 15px;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        transform: all 0.3s ease;
+        font-family: 'Kalam', cursive;
+    }
+     
+}
+@media screen and (min-width: 667px) and (max-width: 737px) and (orientation: landscape) {
+    nav .logo{
+        width: 90%;
+         position: relative;
+         left: -15%;
+         
+     }
+     .container{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+     }
+     #direction{
+        display: none;
+     }
+     .step-line{
+        display: none;
+     }
+     .direction2{
+        display: flex;
+        flex-direction: column;
+     }
+     .chops:nth-child(5) > img:nth-child(1) {
+        
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 50%;
+       }
+       .chops:nth-child(5) > p:nth-child(2) {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 50%;
+       }
+       nav ul li a{
+        color:#fff;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 8px 15px;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        transform: all 0.3s ease;
+        font-family: 'Kalam', cursive;
+    }
+
+}
+@media screen and (min-width: 737px) and (max-width:  850px) and (orientation: landscape){
+    nav .logo{
+        width: 90%;
+         position: relative;
+         left: -15%;
+         
+         }
+         .container{
+            display: grid;
+            grid-template-columns: repeat(2 ,1fr);
+         }
+         #direction{
+            display: none;
+         }
+         .step-line{
+            display: none;
+         }
+         .direction2{
+            display: flex;
+            flex-direction: column;
+         }
+         .chops:nth-child(5) > img:nth-child(1) {
+            
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left: 55%;
+           }
+           .chops:nth-child(5) > p:nth-child(2) {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left: 50%;
+           }
+           nav ul li a{
+            color:#fff;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            transform: all 0.3s ease;
+            font-family: 'Kalam', cursive;
+        }
 }
