@@ -10,7 +10,7 @@ function menuShow(){
 }
 
 
-const target = document.querySelectorAll('[data-anime');
+const target = document.querySelectorAll('data-anime');
 const animationClass = 'animate';
 
 function animeScroll() { 
