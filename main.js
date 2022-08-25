@@ -45,7 +45,7 @@ $('.nav a[href^="#"]').on('click', function(e) {
     var id = $(this).attr('href'),
     targetOffset = $(id).offset().top;
       
-    $('galeria').animate({ 
+    $('').animate({ 
       scrollTop: targetOffset - 100
-    }, 500);
+    }, 300);
   });
