@@ -10,7 +10,7 @@ function menuShow(){
 }
 
 
-const target = document.querySelectorAll('data-anime');
+const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
 
 function animeScroll() { 
@@ -45,7 +45,8 @@ $('.nav a[href^="#"]').on('click', function(e) {
     var id = $(this).attr('href'),
     targetOffset = $(id).offset().top;
       
-    $('').animate({ 
+    $('galeria').animate({ 
       scrollTop: targetOffset - 100
-    }, 300);
+    }, 500);
   });
+

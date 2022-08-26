@@ -372,7 +372,7 @@ font-family: 'Rubik Dirt', cursive;
 }
 
 [data-anime="left"]{
-    transform: translate3d(-50px, 0 , 0);
+    transform: translate3d(50px, 0 , 0);
 }
 [data-anime="right"]{
     transform: translate3d(50px, 0 , 0);
@@ -410,7 +410,7 @@ font-family: 'Rubik Dirt', cursive;
         display: block;
         color: #fff;
     }
-    nav ul {
+    nv ul {
         position: fixed;
         top: 85px;
         background-color: #000;
@@ -492,8 +492,11 @@ color: #fff;
     }
     
     .logo h1{
-        font-size: 0.8rem ;
+        font-size: 12px ;
         position: relative;
+        bottom: 20px;
+        
+       
     }
     .title-chop h1{
     font-size: 2rem;
@@ -587,6 +590,24 @@ color: #fff;
         overflow: auto;
     
     }
+    nav ul {
+        position: fixed;
+        top: 85px;
+        background-color: #000;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    
+    .logo h1{
+        font-size: 12px ;
+        position: relative;
+        bottom: 20px;
+        
+       
+    }
     li:nth-child(4) > a:nth-child(1) {
      background-color: #000;
        }
@@ -596,19 +617,24 @@ color: #fff;
 
       }
        
+      li:nth-child(4) > a:nth-child(1) {
+        border: 1px solid;
+        border-radius: 4px;
+        width: 89%;
+        background-color: #fff;
+        color: #000;
+       }
        
-       
-       nav ul li a{
+       nav ul li a:nth-child(){
         color:#fff;
-        text-decoration: none;
         font-family: sans-serif;
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 600;
-        padding: 8px 15px;
-        border-radius: 5px;
-        letter-spacing: 1px;
+        text-transform: uppercase;
         transform: all 0.3s ease;
-        font-family: 'Kalam', cursive;
+       
+        
+       
     }
 
     
@@ -640,6 +666,24 @@ color: #fff;
          display: flex;
          flex-direction: column;
      }
+     nav ul {
+        position: fixed;
+        top: 85px;
+        background-color: #000;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    
+    .logo h1{
+        font-size: 12px ;
+        position: relative;
+        bottom: 20px;
+        
+       
+    }
      .container img{
          width: 40%;
      }
@@ -827,6 +871,24 @@ color: #fff;
                 letter-spacing: 1px;
                 transform: all 0.3s ease;
                 font-family: 'Kalam', cursive;
+            }
+            nav ul {
+                position: fixed;
+                top: 85px;
+                background-color: #000;
+                height: 100vh;
+                width: 100%;
+                left: -100%;
+                display: block;
+                transition: all 0.3s ease;
+            }
+            
+            .logo h1{
+                font-size: 12px ;
+                position: relative;
+                bottom: 20px;
+                
+               
             }
 }
 
