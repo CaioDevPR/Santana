@@ -1,5 +1,5 @@
 ## Olá Meu Nome é caio vinicius Developer !!
-Projeto de uma choperia desenvolvido totalmente por min (Layout , design , imagens , estrutura , estilização e responsividade)
+Projeto de uma distribuidora de chopp desenvolvido totalmente por min (Layout , design , imagens , estrutura , estilização e responsividade)
 Web site basico para apresentar ao usuario uma noção do qual nicho o cliente irá encontrar !!
 Imagens do produto 
 Descricao do produto 
