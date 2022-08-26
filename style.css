@@ -275,7 +275,15 @@ footer button:hover{
     transition: 0.5s;
     background-color:dimgray;  
 }
-
+li:nth-child(4) > a:nth-child(1) {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #f44803;
+   }
+   li:nth-child(4) > a:nth-child(1):hover {
+    background-color: #f44803;
+    color: #000;
+   }
 .title-chop h1 {
     display: flex;
     justify-content: center;
@@ -487,7 +495,7 @@ color: #fff;
         text-transform: uppercase;
         top: 30px;
     }
-   
+  
     nav ul {
         position: fixed;
         top: 85px;
@@ -657,6 +665,13 @@ color: #fff;
          text-transform: uppercase;
          font-size: 1.6rem;
      }
+     li:nth-child(4) > a:nth-child(1) {
+        border: 1px solid;
+        border-radius: 4px;
+        width: 89%;
+        background-color: #fff;
+        color: #000;
+    }
      .logo h1{
         font-size: 20px;
         letter-spacing: 2px;
@@ -773,14 +788,8 @@ color: #fff;
             overflow: auto;
         
         }
-     li:nth-child(4) > a:nth-child(1) {
-      background-color: #000;
-        }
-        nav ul li:nth-child(4) {
-         border: 1px solid #000;
-         background-color: #000;
- 
-       }
+    
+        
         
         
         nav ul li a{
@@ -801,6 +810,12 @@ color: #fff;
      }
 }
 
+
+
+
+
+
+
 @media screen and (min-width: 415px) and (max-width: 600px ) {
      nav .logo{
         width: 90%;
@@ -808,8 +823,12 @@ color: #fff;
          left: -15%;
      }
      li:nth-child(4) > a:nth-child(1) {
-        background-color: #000;
-          }
+        border: 1px solid;
+        border-radius: 4px;
+        width: 89%;
+        background-color: #fff;
+        color: #000;
+    }
           nav ul li:nth-child(4) {
            border: 1px solid #000;
            background-color: #000;
@@ -820,6 +839,7 @@ color: #fff;
             flex-direction: column;
             background-color: #000;
         }
+        
         .container{
             display: flex;
             flex-direction: column;
@@ -936,13 +956,11 @@ color: #fff;
         color:#fff;
         text-decoration: none;
         font-family: sans-serif;
-        font-size: 15px;
+        font-size:13px;
         font-weight: 600;
-        padding: 8px 15px;
-        border-radius: 5px;
-        letter-spacing: 1px;
-        transform: all 0.3s ease;
-        font-family: 'Kalam', cursive;
+       transform: all 0.3s ease;
+       
+        
     }
      
 }
