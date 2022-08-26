@@ -359,6 +359,14 @@ font-family: 'Rubik Dirt', cursive;
 }
 @keyframes animate {
     0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+@keyframes animate {
+    0% {
         width: 0;
     }
     70%{
@@ -410,7 +418,7 @@ font-family: 'Rubik Dirt', cursive;
         display: block;
         color: #fff;
     }
-    nv ul {
+    nav ul {
         position: fixed;
         top: 85px;
         background-color: #000;
@@ -495,9 +503,7 @@ color: #fff;
         font-size: 12px ;
         position: relative;
         bottom: 20px;
-        
-       
-    }
+     }
     .title-chop h1{
     font-size: 2rem;
     }
@@ -652,7 +658,10 @@ color: #fff;
          font-size: 1.6rem;
      }
      .logo h1{
-        font-size: 1.1rem;
+        font-size: 20px;
+        letter-spacing: 2px;
+        position: relative;
+        top: 6px;
      }
      .title-chop h1{
      font-size: 2rem;
@@ -675,6 +684,7 @@ color: #fff;
         left: -100%;
         display: block;
         transition: all 0.3s ease;
+        
     }
     
     .logo h1{
@@ -777,13 +787,13 @@ color: #fff;
          color:#fff;
          text-decoration: none;
          font-family: sans-serif;
-         font-size: 15px;
+         font-size: 20px;
          font-weight: 600;
          padding: 8px 15px;
          border-radius: 5px;
          letter-spacing: 1px;
          transform: all 0.3s ease;
-         font-family: 'Kalam', cursive;
+        
      }
      footer p:nth-child(5){
         margin-top: 10px;
@@ -884,7 +894,7 @@ color: #fff;
             }
             
             .logo h1{
-                font-size: 12px ;
+                font-size: 40px ;
                 position: relative;
                 bottom: 20px;
                 
